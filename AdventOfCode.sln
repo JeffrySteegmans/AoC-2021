@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC.Scanner", "AoC.Scanner\AoC.Scanner.csproj", "{369DC7AF-B515-4D3F-AF8C-FADE053F78DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AoC.Scanner", "AoC.Scanner\AoC.Scanner.csproj", "{369DC7AF-B515-4D3F-AF8C-FADE053F78DC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0D1610EC-E7C5-411A-9B01-CAB08A9162E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC.Scanner.Tests", "AoC.Scanner.Tests\AoC.Scanner.Tests.csproj", "{B2B81D0E-372E-41E3-9E5E-DD6A01051319}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AoC.Scanner.Tests", "AoC.Scanner.Tests\AoC.Scanner.Tests.csproj", "{B2B81D0E-372E-41E3-9E5E-DD6A01051319}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Output", "Output", "{8D5D365D-26A3-41C2-B9ED-389CED4F5567}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC.Day01", "AoC.Day01\AoC.Day01.csproj", "{B0C72296-E99A-4C7B-A577-5C7EDFD37207}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AoC.Day01", "AoC.Day01\AoC.Day01.csproj", "{B0C72296-E99A-4C7B-A577-5C7EDFD37207}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC.Navigation", "AoC.Navigation\AoC.Navigation.csproj", "{CC74B12C-9B4F-48BE-871F-E31BABBDE9F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC.Navigation.Tests", "AoC.Navigation.Tests\AoC.Navigation.Tests.csproj", "{1918E032-2D71-4CC4-B48A-02E3CDC06422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AoC.Day02", "AoC.Day02\AoC.Day02.csproj", "{FE15423F-E128-4EFB-84F5-009D571C1943}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +37,18 @@ Global
 		{B0C72296-E99A-4C7B-A577-5C7EDFD37207}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0C72296-E99A-4C7B-A577-5C7EDFD37207}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0C72296-E99A-4C7B-A577-5C7EDFD37207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC74B12C-9B4F-48BE-871F-E31BABBDE9F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC74B12C-9B4F-48BE-871F-E31BABBDE9F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC74B12C-9B4F-48BE-871F-E31BABBDE9F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC74B12C-9B4F-48BE-871F-E31BABBDE9F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1918E032-2D71-4CC4-B48A-02E3CDC06422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1918E032-2D71-4CC4-B48A-02E3CDC06422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1918E032-2D71-4CC4-B48A-02E3CDC06422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1918E032-2D71-4CC4-B48A-02E3CDC06422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE15423F-E128-4EFB-84F5-009D571C1943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE15423F-E128-4EFB-84F5-009D571C1943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE15423F-E128-4EFB-84F5-009D571C1943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE15423F-E128-4EFB-84F5-009D571C1943}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +56,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B2B81D0E-372E-41E3-9E5E-DD6A01051319} = {0D1610EC-E7C5-411A-9B01-CAB08A9162E9}
 		{B0C72296-E99A-4C7B-A577-5C7EDFD37207} = {8D5D365D-26A3-41C2-B9ED-389CED4F5567}
+		{1918E032-2D71-4CC4-B48A-02E3CDC06422} = {0D1610EC-E7C5-411A-9B01-CAB08A9162E9}
+		{FE15423F-E128-4EFB-84F5-009D571C1943} = {8D5D365D-26A3-41C2-B9ED-389CED4F5567}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {029A36E7-E005-4F4F-9749-098530074526}
