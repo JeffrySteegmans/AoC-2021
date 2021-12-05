@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AoC.Common.IO\AoC.Common.IO.csproj" />
     <ProjectReference Include="..\AoC.Scanner\AoC.Scanner.csproj" />
   </ItemGroup>
 

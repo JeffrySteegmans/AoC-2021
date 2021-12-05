@@ -4,7 +4,7 @@ using Xunit;
 
 namespace AoC.Navigation.Tests
 {
-    public class NavigatorHelperTests
+    public class NavigatorTests
     {
         private readonly List<string> instructions = new List<string>
         {
@@ -19,9 +19,20 @@ namespace AoC.Navigation.Tests
         [Fact]
         public void CalculatePosition_ShouldReturnCorrectPosition()
         {
-            var position = NavigatorHelper.CalculatePosition(instructions);
+            var navigator = new Navigator();
+            var position = navigator.CalculatePosition(instructions);
 
             position.Depth.Should().Be(10);
+            position.HorizontalPosition.Should().Be(15);
+        }
+
+        [Fact]
+        public void CalculatePositionWithAim_ShouldReturnCorrectPosition()
+        {
+            var navigator = new Navigator();
+            var position = navigator.CalculatePositionWithAim(instructions);
+
+            position.Depth.Should().Be(60);
             position.HorizontalPosition.Should().Be(15);
         }
     }

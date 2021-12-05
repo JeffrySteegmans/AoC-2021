@@ -1,18 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using AoC.Common.IO;
 using AoC.Scanner;
 
 Console.WriteLine("Day 1 - Part 1");
 
-var measurements = new List<int>();
-
-foreach (string line in File.ReadLines($@"{System.Environment.CurrentDirectory}\Input\part1.txt"))
-{
-    if (int.TryParse(line, out int measurement))
-    {
-        measurements.Add(measurement);
-    }
-}
-
+var measurements = await InputHelper.ReadTextFile<int>($@"{Environment.CurrentDirectory}\Input\part1.txt");
 var depthMeasurementIncreases = await SonarHelper.DepthMeasurementIncreases(measurements);
 
 Console.WriteLine($"Increases: {depthMeasurementIncreases}");
