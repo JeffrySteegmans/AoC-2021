@@ -49,5 +49,32 @@ namespace AoC.Diagnostics.Tests
 
             powerUsage.Should().Be(198);
         }
+
+        [Fact]
+        public async Task GivenReport_WhenCalculateOxygenGeneratorRating_ThenShouldReturnCorrectResult()
+        {
+            var reportParser = new ReportParser(_report);
+            var oxygenGeneratorRating = await reportParser.CalculateOxygenGeneratorRating();
+
+            oxygenGeneratorRating.Should().Be(23);
+        }
+
+        [Fact]
+        public async Task GivenReport_WhenCalculateCo2ScrubberRating_ThenShouldReturnCorrectResult()
+        {
+            var reportParser = new ReportParser(_report);
+            var co2ScrubberRating = await reportParser.CalculateCo2ScrubberRating();
+
+            co2ScrubberRating.Should().Be(10);
+        }
+
+        [Fact]
+        public async Task GivenReport_WhenCalculateLifeSupportRating_ThenShouldReturnCorrectResult()
+        {
+            var reportParser = new ReportParser(_report);
+            var lifeSupportRating = await reportParser.CalculateLifeSupportRating();
+
+            lifeSupportRating.Should().Be(230);
+        }
     }
 }
